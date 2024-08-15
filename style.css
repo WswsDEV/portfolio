@@ -1,0 +1,121 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("coding_setup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+:root {
+  --main_color: rgb(44, 151, 223);
+  --secondary_color: rgb(79, 101, 51);
+}
+h1 {
+  font-size: 65px;
+  color: var(--main_color);
+}
+h3 {
+  font-family: "Source Code Pro", monospace;
+  font-size: x-large;
+}
+nav ul li {
+  display: inline-block;
+  font-size: larger;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+}
+.profile {
+  height: 100px;
+  border-radius: 25px;
+  border: 5px;
+  border-style: dashed;
+  border-color: var(--main_color);
+  padding: 3px;
+  display: inline;
+}
+button {
+  padding: 15px 25px;
+  font-size: larger;
+  border-radius: 10px;
+  background-color: var(--secondary_color);
+  border: 0px;
+  margin-bottom: 20px;
+}
+#skills {
+  background-color: #ffffff90;
+  width: 20%;
+  border-radius: 10px;
+}
+.logo {
+  text-decoration: none;
+  color: rgb(230, 233, 227);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.navigation a {
+  text-decoration: rgb(79, 101, 51);
+  font-weight: 500;
+  font-size: 1.1em;
+  padding-left: 30px;
+}
+.navigation a:hover {
+  color: #601cfc;
+}
+i {
+  color: rgb(79, 101, 51);
+  padding-left: 10px;
+}
+i:hover {
+  color: #601cfc;
+}
+@media (max-width: 641px) /*tablet*/ {
+  body {
+    font-size: 12px;
+  }
+  .main.content h2 {
+    font-size: 0.8em;
+  }
+  .main.content h3 {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 300px) /*phone*/ {
+  body {
+    font-size: 10px;
+  }
+}
+.projects .content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.projects .content .card {
+  background-color: rgba(44, 151, 223, 0.605);
+  box-shadow: 0 5px 25px black;
+
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+  padding: 10px;
+}
+.card .icon {
+  font-size: 8em;
+  text-align: center;
+}
+.projects .card:hover {
+  transform: scale(1.1);
+}
+
+.project h2 {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
